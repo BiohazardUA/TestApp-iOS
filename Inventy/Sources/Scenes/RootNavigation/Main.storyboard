@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Mx7-Yt-1uF">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Root Navigation Controller-->
+        <scene sceneID="1d0-id-7bF">
+            <objects>
+                <navigationController navigationBarHidden="YES" id="Mx7-Yt-1uF" customClass="RootNavigationController" customModule="TrovAuto" customModuleProvider="target" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Kkj-WF-3MY">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="qaE-8S-GMb" kind="custom" identifier="ShowOnboarding" customClass="FadeResetSegue" customModule="ToyBox" id="PLi-Ie-e9k"/>
+                        <segue destination="vcc-5u-QY9" kind="custom" identifier="ShowSignIn" customClass="FadeResetSegue" customModule="ToyBox" id="IZQ-YE-B9f"/>
+                        <segue destination="RkG-ak-SGx" kind="custom" identifier="ShowHome" customClass="FadeResetSegue" customModule="ToyBox" id="QIz-tp-wbJ"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="O6z-Qe-wWT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="0.0" y="0.0"/>
+        </scene>
+        <!--Onboarding-->
+        <scene sceneID="m5l-3S-d5b">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Onboarding" id="qaE-8S-GMb" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mAf-yf-USf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="807" y="-86"/>
+        </scene>
+        <!--SignIn-->
+        <scene sceneID="5bT-Qm-AV1">
+            <objects>
+                <viewControllerPlaceholder storyboardName="SignIn" id="vcc-5u-QY9" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bhV-LR-ihO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="782" y="-1"/>
+        </scene>
+        <!--Dashboard-->
+        <scene sceneID="Jgj-3w-ImN">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Dashboard" id="RkG-ak-SGx" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eRe-z9-jaE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="779" y="88"/>
+        </scene>
+    </scenes>
+</document>
